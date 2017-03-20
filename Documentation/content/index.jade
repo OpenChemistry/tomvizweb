@@ -1,0 +1,31 @@
+layout: index
+description: Tomviz Web
+subtitle: Tomviz for Web Visualization
+comments: false
+---
+
+ul#intro-feature-list
+  li.intro-feature-wrap
+    .intro-feature
+      .intro-feature-icon
+        i.fa.fa-check
+      h3.intro-feature-title
+        a(href="http://www.tomviz.org/").link Tomviz
+      p.intro-feature-desc
+        | Tomographic Visualization of 3D Scientific Data
+
+  li.intro-feature-wrap
+    .intro-feature
+      .intro-feature-icon
+        i.fa.fa-cloud
+      h3.intro-feature-title
+        .link Tomviz Web
+      p.intro-feature-desc
+        | Share Tomographic Visualization on the Web
+
+
+
+center
+  div.tomviz-data-viewer(data-url="data/GeometryVolume.tomviz",data-viewport="600x300",data-no-ui,data-animation="azimuth=10",style="margin-bottom: 20px;")
+
+script(type="text/javascript", src="data/js/tomviz.js")

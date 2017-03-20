@@ -1,0 +1,11 @@
+docs:
+  getting_started:
+    overview: index.html
+  image_export:
+    images_current_scene: images_current_scene.html
+    images_volume_exploration: images_volume_exploration.html
+    images_contour_exploration: images_contour_exploration.html
+  geo_exports:
+    geometry_contours: geometry_contours.html
+    geometry_contour_exploration: geometry_contour_exploration.html
+    geometry_volume: geometry_volume.html

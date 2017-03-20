@@ -1,0 +1,30 @@
+menu:
+  docs: Docs
+  api: API
+  examples: Examples
+  news: News
+  search: Search
+
+index:
+  get_started: Get started
+
+page:
+  contents: Contents
+  back_to_top: Back to Top
+  improve: Improve this doc
+  prev: Prev
+  next: Next
+  last_updated: "Last updated: %s"
+
+sidebar:
+  docs:
+    getting_started: Getting Started
+    overview: Overview
+    image_export: Image based exports
+    images_current_scene: Scene
+    images_volume_exploration: Volume exploration
+    images_contour_exploration: Contour exploration
+    geo_exports: Geometry based exports
+    geometry_contours: Contour(s)
+    geometry_contour_exploration: Contour exploration
+    geometry_volume: Volume

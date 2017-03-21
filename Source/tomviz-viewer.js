@@ -234,10 +234,7 @@ function animate(viewer, name, interval, value = 1) {
   } else if (viewer.geometryBuilder && viewer.geometryBuilder.getActiveCamera && viewer.geometryBuilder.render) {
     // Animation parameter not on query data model
     const camera = viewer.geometryBuilder.getActiveCamera();
-    const render = () => {
-      viewer.geometryBuilder.renderer.resetCameraClippingRange(); // Bad should fix pvw code...
-      viewer.geometryBuilder.render();
-    };
+    const render = viewer.geometryBuilder.render;
     animateCamera(viewer, name, value, interval, { camera, render });
   }
 }
@@ -267,6 +264,12 @@ export function initializeViewers() {
           if (el.dataset.noMouse !== undefined) {
             viewer.userData.disableMouseListener = true;
             addDoubleClick = true;
+          }
+
+          if (el.dataset.backgroundColor && viewer.geometryBuilder) {
+            const color = el.dataset.backgroundColor;
+            const bgColor = [color.slice(0, 2), color.slice(2, 4), color.slice(4, 6)].map(v => (parseInt(v, 16) / 255));
+            viewer.geometryBuilder.getRenderer().setBackground(bgColor);
           }
 
           if (el.dataset.initialization) {

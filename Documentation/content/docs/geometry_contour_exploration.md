@@ -4,7 +4,7 @@ title: Geometry contour exploration
 Tomviz Web export.
 
 <center>
-<img src='exports/05_geometry_contour_exploration.png' title="" alt="" />
+<img src='exports/05_geometry_contour_exploration.jpg' title="" alt="" />
 </center>
 
 <!-- <script type="text/javascript" src="https://unpkg.com/tomvizweb"></script> -->

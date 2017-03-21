@@ -4,7 +4,7 @@ title: Images volume exploration
 Tomviz Web export.
 
 <center>
-<img src='exports/02_images_volume_exploration.png' title="" alt="" />
+<img src='exports/02_images_volume_exploration.jpg' title="" alt="" />
 </center>
 
 <!-- <script type="text/javascript" src="https://unpkg.com/tomvizweb"></script> -->

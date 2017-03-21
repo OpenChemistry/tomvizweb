@@ -4,7 +4,7 @@ title: Geometry contour(s)
 Tomviz Web export.
 
 <center>
-<img src='exports/04_geometry_contours.png' title="" alt="" />
+<img src='exports/04_geometry_contours.jpg' title="" alt="" />
 </center>
 
 <!-- <script type="text/javascript" src="https://unpkg.com/tomvizweb"></script> -->

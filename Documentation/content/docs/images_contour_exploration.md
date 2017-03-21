@@ -7,8 +7,6 @@ Tomviz Web export.
 <img src='exports/03_images_contour_exploration.jpg' title="" alt="" />
 </center>
 
-<!-- <script type="text/javascript" src="https://unpkg.com/tomvizweb"></script> -->
-
 ```
 <div
   class="tomviz-data-viewer"
@@ -21,6 +19,7 @@ Tomviz Web export.
   data-initialization="theta=126"
   data-animation="phi=100&contour=1000"
 />
+<script type="text/javascript" src="https://unpkg.com/tomvizweb"></script>
 ```
 
 <center>

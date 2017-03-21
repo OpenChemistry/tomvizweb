@@ -7,8 +7,6 @@ Tomviz Web export.
 <img src='exports/01_images_current_scene.jpg' title="" alt="" />
 </center>
 
-<!-- <script type="text/javascript" src="https://unpkg.com/tomvizweb"></script> -->
-
 ```
 <div
   class="tomviz-data-viewer"
@@ -21,6 +19,7 @@ Tomviz Web export.
   data-initialization="theta=126"
   data-animation="phi=100"
 />
+<script type="text/javascript" src="https://unpkg.com/tomvizweb"></script>
 ```
 
 <center>

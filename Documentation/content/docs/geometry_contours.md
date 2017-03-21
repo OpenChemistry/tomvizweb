@@ -7,8 +7,6 @@ Tomviz Web export.
 <img src='exports/04_geometry_contours.jpg' title="" alt="" />
 </center>
 
-<!-- <script type="text/javascript" src="https://unpkg.com/tomvizweb"></script> -->
-
 ```
 <div
   class="tomviz-data-viewer"
@@ -19,6 +17,7 @@ Tomviz Web export.
 
   data-animation="azimuth=10"
 />
+<script type="text/javascript" src="https://unpkg.com/tomvizweb"></script>
 ```
 
 <center>

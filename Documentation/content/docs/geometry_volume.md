@@ -7,29 +7,30 @@ Tomviz Web export.
 <img src='exports/06_geometry_volume.jpg' title="" alt="" />
 </center>
 
-<!-- <script type="text/javascript" src="https://unpkg.com/tomvizweb"></script> -->
-
 ```
 <div
   class="tomviz-data-viewer"
   data-url="../data/ImagesVolumeExploration.tomviz"
-  data-viewport="600x500"
+  data-viewport="100%x500"
 
   data-no-ui
 
-  data-animation="azimuth=10"
+  data-step="azimuth=10"
+  data-animation="azimuth=100"
 />
+<script type="text/javascript" src="https://unpkg.com/tomvizweb"></script>
 ```
 
 <center>
 <div
   class="tomviz-data-viewer"
   data-url="../data/GeometryVolume.tomviz"
-  data-viewport="600x500"
+  data-viewport="100%x500"
   
   data-no-ui
 
-  data-animation="azimuth=10"
+  data-step="azimuth=10"
+  data-animation="azimuth=100"
 />
 </div>
 </center>

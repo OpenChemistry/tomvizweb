@@ -23,8 +23,8 @@
     "mout": "1.0.0",
 
     "arctic-viewer": "1.5.17",
-    "paraviewweb": "2.2.92",
-    "vtk.js": "2.13.3",
+    "paraviewweb": "2.2.93",
+    "vtk.js": "2.13.4",
 
     "jszip": "3.1.3"
   },

@@ -5,7 +5,7 @@
   <link href="/tomvizweb/atom.xml" rel="self"/>
   
   <link href="https://OpenChemistry.github.io/tomvizweb/"/>
-  <updated>2017-03-20T22:54:23.000Z</updated>
+  <updated>2017-03-21T18:03:46.360Z</updated>
   <id>https://OpenChemistry.github.io/tomvizweb/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Hexo</title>
-    <link href="https://OpenChemistry.github.io/tomvizweb/2016/04/28/kw-doc/"/>
-    <id>https://OpenChemistry.github.io/tomvizweb/2016/04/28/kw-doc/</id>
+    <link href="https://OpenChemistry.github.io/tomvizweb/2016/04/29/kw-doc/"/>
+    <id>https://OpenChemistry.github.io/tomvizweb/2016/04/29/kw-doc/</id>
     <published>2016-04-29T00:00:00.000Z</published>
-    <updated>2017-03-20T22:54:23.000Z</updated>
+    <updated>2017-03-21T18:03:46.360Z</updated>
     
     <content type="html"><![CDATA[<p>Thanks for using kw-doc which is based on Hexo and its template from its own documentation.</p>
 ]]></content>

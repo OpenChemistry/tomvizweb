@@ -1,7 +1,7 @@
 title: Images volume exploration
 ---
 
-Tomviz Web export.
+This exports the current scene with some exploration of the volume.
 
 <center>
 <img src='exports/02_images_volume_exploration.jpg' title="" alt="" />
@@ -32,7 +32,7 @@ Tomviz Web export.
   data-no-mouse
 
   data-initialization="theta=126"
-  data-animation="phi=100&volume=500"
+  data-animation="phi=150&volume=500"
 />
 </div>
 </center>

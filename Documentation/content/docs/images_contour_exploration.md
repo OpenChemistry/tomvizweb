@@ -1,7 +1,7 @@
 title: Images contour exploration
 ---
 
-Tomviz Web export.
+Export images that contain a number of contour values along with the scene.
 
 <center>
 <img src='exports/03_images_contour_exploration.jpg' title="" alt="" />
@@ -32,7 +32,7 @@ Tomviz Web export.
   data-no-mouse
 
   data-initialization="theta=126"
-  data-animation="phi=100&contour=1000"
+  data-animation="phi=150&contour=1000"
 />
 </div>
 </center>

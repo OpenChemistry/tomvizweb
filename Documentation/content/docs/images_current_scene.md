@@ -1,7 +1,7 @@
 title: Images current scene
 ---
 
-Tomviz Web export.
+This will export images of the current scene, preserving Tomviz settings.
 
 <center>
 <img src='exports/01_images_current_scene.jpg' title="" alt="" />
@@ -32,7 +32,7 @@ Tomviz Web export.
   data-no-mouse
 
   data-initialization="theta=126"
-  data-animation="phi=100"
+  data-animation="phi=200"
 />
 </div>
 </center>

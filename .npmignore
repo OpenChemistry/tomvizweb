@@ -1,7 +1,4 @@
-.DS_Store
-.npmrc
-.sass-cache
 .travis.yml
+.editorconfig
 Data
 Documentation
-npm-debug.log

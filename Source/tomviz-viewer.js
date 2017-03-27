@@ -18,7 +18,6 @@ import LookupTableManager from 'paraviewweb/src/Common/Core/LookupTableManager';
 import URLExtract         from 'paraviewweb/src/Common/Misc/URLExtract';
 
 import ImageQueryDataModelViewer from 'arctic-viewer/lib/types/ImageQueryDataModel';
-import SortedCompositeViewer     from 'arctic-viewer/lib/types/SortedComposite';
 import VTKGeometry               from 'arctic-viewer/lib/types/VTKGeometry';
 import VTKVolume                 from 'arctic-viewer/lib/types/VTKVolume';
 
@@ -38,7 +37,6 @@ const iOS = /iPad|iPhone|iPod/.test(window.navigator.platform);
 const lookupTableManager = new LookupTableManager();
 const dataViewers = [
   ImageQueryDataModelViewer,
-  SortedCompositeViewer,
   VTKGeometry,
   VTKVolume,
 ];
@@ -239,6 +237,14 @@ function animate(viewer, name, interval, value = 1) {
   }
 }
 
+function createCameraInitialization(geometryBuilder, methodName, value) {
+  return () => {
+    console.log(methodName, value);
+    const camera = geometryBuilder.getActiveCamera();
+    camera[methodName](value);
+  };
+}
+
 // Viewer automatic usage -----------------------------------------------------
 
 export function initializeViewers() {
@@ -275,7 +281,11 @@ export function initializeViewers() {
           if (el.dataset.initialization) {
             const defaults = URLExtract.extractURLParameters(false, el.dataset.initialization);
             Object.keys(defaults).forEach((name) => {
-              viewer.queryDataModel.setValue(name, defaults[name]);
+              if (viewer.queryDataModel.getValues(name)) {
+                viewer.queryDataModel.setValue(name, defaults[name]);
+              } else if (viewer.geometryBuilder && viewer.geometryBuilder.addInitializationAction) {
+                viewer.geometryBuilder.addInitializationAction(createCameraInitialization(viewer.geometryBuilder, name, defaults[name]));
+              }
             });
             viewer.queryDataModel.fetchData();
           }

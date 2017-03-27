@@ -15,6 +15,7 @@ Tomviz Web export.
 
   data-no-ui
 
+  data-initialization="zoom=2.0"
   data-animation="azimuth=10"
 />
 <script type="text/javascript" src="https://unpkg.com/tomvizweb"></script>
@@ -28,6 +29,7 @@ Tomviz Web export.
   
   data-no-ui
 
+  data-initialization="zoom=2.0"
   data-animation="azimuth=10"
 />
 </div>

@@ -15,6 +15,7 @@ Tomviz Web export.
 
   data-no-ui
 
+  data-initialization="zoom=3.0"
   data-step="azimuth=1"
   data-animation="contour=500&azimuth=100"
 />
@@ -29,6 +30,7 @@ Tomviz Web export.
   
   data-no-ui
 
+  data-initialization="zoom=3.0"
   data-step="azimuth=1"
   data-animation="contour=500&azimuth=100"
 />

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://OpenChemistry.github.io/tomvizweb/index.html</loc>
+    
+    <lastmod>2017-03-27T00:35:10.105Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://OpenChemistry.github.io/tomvizweb/docs/images_contour_exploration.html</loc>
     
     <lastmod>2017-03-22T19:13:29.266Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://OpenChemistry.github.io/tomvizweb/docs/images_volume_exploration.html</loc>
     
     <lastmod>2017-03-22T19:13:29.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://OpenChemistry.github.io/tomvizweb/index.html</loc>
-    
-    <lastmod>2017-03-22T01:06:15.094Z</lastmod>
     
   </url>
   

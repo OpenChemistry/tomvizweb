@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://OpenChemistry.github.io/tomvizweb/docs/geometry_volume.html</loc>
+    
+    <lastmod>2017-03-27T21:08:14.439Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://OpenChemistry.github.io/tomvizweb/docs/geometry_contour_exploration.html</loc>
+    
+    <lastmod>2017-03-27T21:08:14.439Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://OpenChemistry.github.io/tomvizweb/docs/geometry_contours.html</loc>
+    
+    <lastmod>2017-03-27T21:08:14.439Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://OpenChemistry.github.io/tomvizweb/index.html</loc>
     
-    <lastmod>2017-03-27T00:35:10.105Z</lastmod>
+    <lastmod>2017-03-27T21:08:14.439Z</lastmod>
     
   </url>
   
@@ -30,13 +51,6 @@
   </url>
   
   <url>
-    <loc>https://OpenChemistry.github.io/tomvizweb/docs/geometry_volume.html</loc>
-    
-    <lastmod>2017-03-21T18:03:46.368Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://OpenChemistry.github.io/tomvizweb/examples/index.html</loc>
     
     <lastmod>2017-03-21T18:03:46.368Z</lastmod>
@@ -45,20 +59,6 @@
   
   <url>
     <loc>https://OpenChemistry.github.io/tomvizweb/api/index.html</loc>
-    
-    <lastmod>2017-03-21T18:03:46.368Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://OpenChemistry.github.io/tomvizweb/docs/geometry_contour_exploration.html</loc>
-    
-    <lastmod>2017-03-21T18:03:46.368Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://OpenChemistry.github.io/tomvizweb/docs/geometry_contours.html</loc>
     
     <lastmod>2017-03-21T18:03:46.368Z</lastmod>
     

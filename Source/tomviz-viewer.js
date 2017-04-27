@@ -11,6 +11,8 @@ import 'babel-polyfill';
 import React    from 'react';
 import ReactDOM from 'react-dom';
 
+import 'paraviewweb/src/React/CollapsibleControls/CollapsibleControlFactory/QueryDataModelWidget';
+
 import GenericViewer      from 'paraviewweb/src/React/Viewers/ImageBuilderViewer';
 import GeometryViewer     from 'paraviewweb/src/React/Viewers/GeometryViewer';
 import QueryDataModel     from 'paraviewweb/src/IO/Core/QueryDataModel';

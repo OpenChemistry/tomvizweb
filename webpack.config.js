@@ -46,19 +46,31 @@ var rules = [
   }, {
     test: /\.js$/,
     include: /node_modules(\/|\\)paraviewweb(\/|\\)/,
-    loader: 'babel-loader?presets[]=es2015,presets[]=react',
+    loader: 'babel-loader',
+    options: {
+      presets: ['env', 'react'],
+    },
   }, {
     test: /\.js$/,
     exclude: /node_modules/,
-    loader: 'babel-loader?presets[]=es2015,presets[]=react',
+    loader: 'babel-loader',
+    options: {
+      presets: ['env', 'react'],
+    }
   }, {
     test: /\.js$/,
     include: /node_modules(\/|\\)arctic-viewer(\/|\\)/,
-    loader: 'babel-loader?presets[]=es2015,presets[]=react',
+    loader: 'babel-loader',
+    options: {
+      presets: ['env', 'react'],
+    }
   }, {
     test: /\.js$/,
     include: /node_modules(\/|\\)vtk.js(\/|\\)/,
-    loader: 'babel-loader?presets[]=es2015,presets[]=react',
+    loader: 'babel-loader',
+    options: {
+      presets: ['env', 'react'],
+    }
   }, {
     test: /\.mcss$/,
     use: [{

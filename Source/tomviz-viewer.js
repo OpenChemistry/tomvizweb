@@ -100,7 +100,13 @@ function viewerBuilder(basepath, data, config, callback) {
   }
 
   // Find the right viewer and build it
-  const args = { basepath, data, callback, viewer, dataType };
+  const args = {
+    basepath,
+    data,
+    callback,
+    viewer,
+    dataType,
+  };
   while (viewerCount && !foundViewer) {
     viewerCount -= 1;
     foundViewer = dataViewers[viewerCount](args);
@@ -234,7 +240,11 @@ function animate(viewer, name, interval, value = 1) {
   } else if (viewer.geometryBuilder && viewer.geometryBuilder.getActiveCamera && viewer.geometryBuilder.render) {
     // Animation parameter not on query data model
     const camera = viewer.geometryBuilder.getActiveCamera();
-    const render = viewer.geometryBuilder.render;
+    const {
+      geometryBuilder: {
+        render,
+      },
+    } = viewer.geometryBuilder.render;
     animateCamera(viewer, name, value, interval, { camera, render });
   }
 }

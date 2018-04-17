@@ -39,22 +39,17 @@
   <!-- RSS -->
   <link rel="alternate" href="/tomvizweb/atom.xml" title="tomviz web">
   <!-- Open Graph -->
-  <meta name="description" content="Tomviz Web Viewer let you embed tomviz web export dataset into existing web site and web pages.
-To achieve that you can do it programatically or in a declarative manner.
-DeclarativelyFirst you will ne">
+  <meta name="description" content="Tomviz Web Viewer let you embed tomviz web export dataset into existing web site and web pages. To achieve that you can do it programatically or in a declarative manner. DeclarativelyFirst you will ne">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Overview">
 <meta property="og:url" content="https://OpenChemistry.github.io/tomvizweb/docs/index.html">
 <meta property="og:site_name" content="tomviz web">
-<meta property="og:description" content="Tomviz Web Viewer let you embed tomviz web export dataset into existing web site and web pages.
-To achieve that you can do it programatically or in a declarative manner.
-DeclarativelyFirst you will ne">
-<meta property="og:updated_time" content="2017-03-21T18:03:46.368Z">
+<meta property="og:description" content="Tomviz Web Viewer let you embed tomviz web export dataset into existing web site and web pages. To achieve that you can do it programatically or in a declarative manner. DeclarativelyFirst you will ne">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-04-17T15:33:14.671Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Overview">
-<meta name="twitter:description" content="Tomviz Web Viewer let you embed tomviz web export dataset into existing web site and web pages.
-To achieve that you can do it programatically or in a declarative manner.
-DeclarativelyFirst you will ne">
+<meta name="twitter:description" content="Tomviz Web Viewer let you embed tomviz web export dataset into existing web site and web pages. To achieve that you can do it programatically or in a declarative manner. DeclarativelyFirst you will ne">
   <!-- Google Analytics -->
   
 </head>
@@ -98,23 +93,23 @@ DeclarativelyFirst you will ne">
                 <p>Tomviz Web Viewer let you embed tomviz web export dataset into existing web site and web pages.</p>
 <p>To achieve that you can do it programatically or in a declarative manner.</p>
 <h2 id="Declaratively" class="article-heading"><a href="#Declaratively" class="headerlink" title="Declaratively"></a>Declaratively<a class="article-anchor" href="#Declaratively" aria-hidden="true"></a></h2><p>First you will need to import the JavaScript library which could be done by adding the following script entry.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;https://unpkg.com/tomvizweb&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;https://unpkg.com/tomvizweb&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <p>Then you need to position a <code>&lt;div&gt;</code> into your web content with the following informations.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;div</div><div class="line">  class=&quot;tomviz-data-viewer&quot;</div><div class="line">  data-url=&quot;./url/to/data.tomviz&quot;</div><div class="line">  data-viewport=&quot;600x500&quot;</div><div class="line">/&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div</span><br><span class="line">  class=&quot;tomviz-data-viewer&quot;</span><br><span class="line">  data-url=&quot;./url/to/data.tomviz&quot;</span><br><span class="line">  data-viewport=&quot;600x500&quot;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
 <p>Look for an actual export to see what the viewer could actually look like based on the data visualized.</p>
 <p>Additional arguments can be provided to remove control UI, disable mouse interaction, create animation…</p>
 <h2 id="Removing-control-UI" class="article-heading"><a href="#Removing-control-UI" class="headerlink" title="Removing control UI"></a>Removing control UI<a class="article-anchor" href="#Removing-control-UI" aria-hidden="true"></a></h2><p>In order to remove the control UI, you can do so by adding <code>data-no-ui</code> attribute.</p>
 <h2 id="Removing-mouse-control" class="article-heading"><a href="#Removing-mouse-control" class="headerlink" title="Removing mouse control"></a>Removing mouse control<a class="article-anchor" href="#Removing-mouse-control" aria-hidden="true"></a></h2><p>In order to remove the control via mouse interaction, you can do so by adding <code>data-no-mouse</code> attribute.</p>
 <h2 id="Initial-state-definition" class="article-heading"><a href="#Initial-state-definition" class="headerlink" title="Initial state definition"></a>Initial state definition<a class="article-anchor" href="#Initial-state-definition" aria-hidden="true"></a></h2><p>Addition information can be provided to chose the exact camera angle and/or parameter setting.<br>To achieve that you will have to provide a <code>data-initialization</code> attribute like the following example:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;div [...]</div><div class="line">  data-initialization=&quot;theta=10&quot;</div><div class="line">/&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div [...]</span><br><span class="line">  data-initialization=&quot;theta=10&quot;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="Adding-animation" class="article-heading"><a href="#Adding-animation" class="headerlink" title="Adding animation"></a>Adding animation<a class="article-anchor" href="#Adding-animation" aria-hidden="true"></a></h2><p>An animation can be achieved by changing several parameter at the same time but not the same time step.<br>Below is an example that will make the data spin changing <code>phi</code> and while also changing the <code>contour</code> value but using a different pace. The unit is actually in milliseconds.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;div</div><div class="line">  class=&quot;tomviz-data-viewer&quot;</div><div class="line">  data-url=&quot;./url/to/data.tomviz&quot;</div><div class="line">  data-viewport=&quot;600x500&quot;</div><div class="line"></div><div class="line">  data-no-ui</div><div class="line">  data-no-mouse</div><div class="line"></div><div class="line">  data-initialization=&quot;theta=10&amp;contours=50&quot;</div><div class="line">  data-animation=&quot;phi=35&amp;contours=1000&quot;</div><div class="line">/&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div</span><br><span class="line">  class=&quot;tomviz-data-viewer&quot;</span><br><span class="line">  data-url=&quot;./url/to/data.tomviz&quot;</span><br><span class="line">  data-viewport=&quot;600x500&quot;</span><br><span class="line"></span><br><span class="line">  data-no-ui</span><br><span class="line">  data-no-mouse</span><br><span class="line"></span><br><span class="line">  data-initialization=&quot;theta=10&amp;contours=50&quot;</span><br><span class="line">  data-animation=&quot;phi=35&amp;contours=1000&quot;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="Step-information" class="article-heading"><a href="#Step-information" class="headerlink" title="Step information"></a>Step information<a class="article-anchor" href="#Step-information" aria-hidden="true"></a></h2><p>For local rendering and rotation animation, you may want to provide what is the amount you want to change a given parameter.<br>To do so, just provide the step information for those parameters with the attribute <code>data-step=&quot;azimuth=2&amp;dolly=5&quot;</code></p>
 <h2 id="Toggle-interaction-mode" class="article-heading"><a href="#Toggle-interaction-mode" class="headerlink" title="Toggle interaction mode"></a>Toggle interaction mode<a class="article-anchor" href="#Toggle-interaction-mode" aria-hidden="true"></a></h2><p>When a viewer is used with <code>data-no-ui</code>, <code>data-no-mouse</code> and <code>data-animation</code>, you may feel helpless if you want to use the actual control panel to tune some parameter or the view. To do so, you will just need to <strong>double click</strong> on the view to toggle the current mode you are in. This will stop the animation and you will gain back the mouse interaction.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-03-21T18:03:46.368Z" itemprop="dateModified">Last updated: 2017-03-21</time>
+                <time class="article-footer-updated" datetime="2018-04-17T15:33:14.671Z" itemprop="dateModified">Last updated: 2018-04-17</time>
                 <a href="images_current_scene.html" class="article-footer-next" title="Scene"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -139,7 +134,7 @@ DeclarativelyFirst you will ne">
     <footer id="footer" class="wrapper">
   <div class="inner">
     <div id="footer-copyright">
-      &copy; 2017 <a href="http://www.kitware.com" target="_blank">Kitware Inc.</a>
+      &copy; 2018 <a href="https://www.kitware.com/" target="_blank">Kitware Inc.</a>
     </div>
     <div id="footer-links">
       <a href="https://github.com/OpenChemistry/tomvizweb" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>

@@ -92,6 +92,12 @@ var rules = [{
     }]
   },
   {
+    test: /\.worker\.js$/,
+    use: [
+      { loader: 'worker-loader', options: { inline: true, fallback: false } },
+    ],
+  },
+  {
     enforce: 'pre',
     test: /\.js$/,
     loader: 'eslint-loader',

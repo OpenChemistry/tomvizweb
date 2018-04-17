@@ -106,15 +106,6 @@ var rules = [{
   }
 ];
 
-if (process.env.NODE_ENV === 'production') {
-  console.log('==> Production build');
-  plugins.push(new webpack.DefinePlugin({
-    'process.env': {
-      NODE_ENV: JSON.stringify('production'),
-    },
-  }));
-}
-
 module.exports = {
   plugins: plugins,
   entry: './Source/tomviz-viewer.js',

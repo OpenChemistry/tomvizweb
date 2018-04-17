@@ -3,10 +3,12 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 
 var plugins = [];
-var rules = [
-  {
+var rules = [{
     test: /\.svg$/,
     loader: 'svg-sprite-loader',
+    options: {
+      runtimeCompat: true
+    },
     exclude: /fonts/,
   }, {
     test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,

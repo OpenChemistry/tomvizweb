@@ -6,44 +6,39 @@
     "url": "git+https://github.com/OpenChemistry/tomvizweb.git"
   },
   "license": "BSD-3-Clause",
-  "bugs": { "url": "https://github.com/OpenChemistry/tomvizweb/issues" },
+  "bugs": {
+    "url": "https://github.com/OpenChemistry/tomvizweb/issues"
+  },
   "homepage": "https://github.com/OpenChemistry/tomvizweb#readme",
   "main": "./Distribution/tomviz.js",
   "dependencies": {
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
-
+    "arctic-viewer": "1.7.2",
+    "commitizen": "^2.9.6",
+    "font-awesome": "4.7.0",
     "gl-matrix": "2.3.1",
     "hammerjs": "2.0.8",
-
-    "font-awesome": "4.7.0",
-    "normalize.css": "5.0.0",
-
+    "jszip": "3.1.3",
     "monologue.js": "0.3.5",
     "mout": "1.1.0",
-
-    "arctic-viewer": "1.7.2",
+    "normalize.css": "5.0.0",
     "paraviewweb": "3.1.4",
-    "vtk.js": "6.4.13",
-
-    "jszip": "3.1.3"
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "vtk.js": "6.4.13"
   },
   "devDependencies": {
     "shelljs": "0.7.7",
     "gh-pages": "0.10.0",
-
     "kw-web-suite": "6.0.2",
     "kw-doc": "1.1.4"
   },
   "scripts": {
-    "doc"           : "kw-doc -c ./Documentation/config.js",
-    "doc:www"       : "kw-doc -c ./Documentation/config.js -s",
-    "doc:publish"   : "kw-doc -c ./Documentation/config.js -mp",
-
+    "doc": "kw-doc -c ./Documentation/config.js",
+    "doc:www": "kw-doc -c ./Documentation/config.js -s",
+    "doc:publish": "kw-doc -c ./Documentation/config.js -mp",
     "build": "webpack --mode development",
     "build:debug": "webpack --mode development --display-modules",
     "build:release": "webpack --mode production",
-
     "commit": "git cz",
     "semantic-release": "semantic-release"
   },

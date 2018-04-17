@@ -40,9 +40,9 @@
     "doc:www"       : "kw-doc -c ./Documentation/config.js -s",
     "doc:publish"   : "kw-doc -c ./Documentation/config.js -mp",
 
-    "build": "webpack",
-    "build:debug": "webpack --display-modules",
-    "build:release": "export NODE_ENV=production && webpack -p",
+    "build": "webpack --mode development",
+    "build:debug": "webpack --mode development --display-modules",
+    "build:release": "webpack --mode production",
 
     "commit": "git cz",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"

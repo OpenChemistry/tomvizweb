@@ -13,8 +13,6 @@ Tomviz Web export.
   data-url="../data/ImagesVolumeExploration.tomviz"
   data-viewport="100%x500"
 
-  data-no-ui
-
   data-initialization="zoom=1.5"
   data-step="azimuth=10"
   data-animation="azimuth=100"
@@ -28,8 +26,6 @@ Tomviz Web export.
   data-url="../data/GeometryVolume.tomviz"
   data-viewport="100%x500"
   
-  data-no-ui
-
   data-initialization="zoom=1.5"
   data-step="azimuth=10"
   data-animation="azimuth=100"
